@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Botón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <script>
+   
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gray-100">
+
+
+  <nav class="bg-white shadow-md px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+     
+      <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <ul class="hidden md:flex space-x-6 font-semibold text-gray-700">
+        <li><a href="prac5.html" class="hover:text-blue-600">Inicio</a></li>
+        <li><a href="prac1.html" class="hover:text-blue-600">Ejercicio 1</a></li>
+        <li><a href="prac2.html" class="hover:text-blue-600">Ejercicio 2</a></li>
+        <li><a href="prac3.html" class="hover:text-blue-600">Ejercicio 3</a></li>
+        <li><a href="prac4.html" class="hover:text-blue-600">Ejercicio 4</a></li>
+      </ul>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden mt-4">
+      <ul class="flex flex-col space-y-2 font-medium text-gray-700">
+        <li><a href="prac5.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Inicio</a></li>
+        <li><a href="prac1.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Ejercicio 1</a></li>
+        <li><a href="prac2.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Ejercicio 2</a></li>
+        <li><a href="prac3.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Ejercicio 3</a></li>
+        <li><a href="prac4.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Ejercicio 4</a></li>
+      </ul>
+    </div>
+    <div class="text-center">
+      <img src="p1.webp" alt="Imagen de ejemplo" class="mx-auto mb-6 rounded shadow-lg" height="400" width="300"/>
+      
+      <button class="bg-green-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+        Ver más
+      </button>
+    </div>
+  </nav>
+ 
+
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú Responsive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Script simple para mostrar/ocultar menú móvil
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="text-xl font-bold text-green-600">Menú Responsive</div>
+
+      <!-- Botón Hamburguesa -->
+      <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Menú (pantalla grande) -->
+      <ul class="hidden md:flex space-x-6 font-semibold text-gray-700">
+        <li><a href="prac1.html" class="hover:text-blue-600">Ejercicio 1</a></li>
+        <li><a href="prac2.html" class="hover:text-blue-600">Ejercicio 2</a></li>
+        <li><a href="prac3.html" class="hover:text-blue-600">Ejercicio 3</a></li>
+        <li><a href="prac4.html" class="hover:text-blue-600">Ejercicio 4</a></li>
+      </ul>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4">
+      <ul class="flex flex-col space-y-2 font-medium text-gray-700">
+        <li><a href="prac1.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Ejercicio 1</a></li>
+        <li><a href="prac2.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Ejercicio 2</a></li>
+        <li><a href="prac3.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Ejercicio 3</a></li>
+        <li><a href="prac4.html" class="block px-4 py-2 hover:bg-blue-100 rounded">Ejercicio 4</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+</body>
+</html>
